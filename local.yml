@@ -2,7 +2,7 @@
   become: true
   tasks:
   - name: Install packages
-    dnf: name={{item}}
+    apt: name={{item}}
     with_items:
       - htop
       - tmux
